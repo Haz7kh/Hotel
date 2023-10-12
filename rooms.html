@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="assets/logo/bonz.ai-logo-color-landscape.png"
+            alt="My Logo"
+          />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- my first section P2 -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Luxurious Rooms</h2>
+        <span>--------</span>
+        <p>Deluxe Rooms Starting At 299$</p>
+        <a href="index.html" class="btn">Return Home</a>
+      </div>
+    </section>
+
+    <!-- search room -->
+    <h2 class="section-title">Search Rooms</h2>
+    <section class="search-rooms-container">
+      <div class="room-type">
+        <label>Room Type:</label>
+        <select>
+          <option value="">All</option>
+          <option value="">Standard</option>
+          <option value="">Deluxe</option>
+          <option value="">Suite</option>
+        </select>
+      </div>
+
+      <div class="guests">
+        <label>Guests:</label>
+        <select>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+        </select>
+      </div>
+
+      <div class="price-range-slider">
+        <label for="">Room price 600$</label>
+        <input
+          type="range"
+          id="priceSlider"
+          min="400"
+          max="600"
+          step="1"
+          value="600"
+        />
+      </div>
+      <div class="room-size">
+        <label for="room_size">Room Size:</label>
+        <div class="size-fields">
+          <input type="number" placeholder="0" />
+          <input type="number" placeholder="1000" />
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <div>
+          <input type="checkbox" name="breakfast" />
+          <label for="breakfast">Breakfast</label>
+        </div>
+        <div>
+          <input type="checkbox" name="pets" />
+          <label for="pets">Pets</label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

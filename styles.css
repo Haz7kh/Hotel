@@ -159,3 +159,48 @@ h3 {
   font-size: 11px;
   color: #fff;
 }
+
+/* ------------search rooms  P2 ------------------ */
+
+.search-rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+select {
+  width: 100px;
+}
+input {
+  width: 50px;
+}
+
+.room-type,
+.guests,
+.price-range-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.size-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.size-fields input {
+  margin-right: 5px;
+}
+
+.price-range-slider label {
+  text-align: center;
+}
