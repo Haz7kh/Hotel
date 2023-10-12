@@ -168,7 +168,7 @@ h3 {
   justify-content: space-between;
   gap: 20px;
   max-width: 800px;
-  margin: 10px auto;
+  margin: 10px auto 70px;
 }
 
 select {
@@ -203,4 +203,14 @@ input {
 
 .price-range-slider label {
   text-align: center;
+}
+
+/* -----------rooms P2 --------------------- */
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 10px auto;
 }
