@@ -275,22 +275,10 @@ input {
 
   /* ----p1----- */
   .menu {
-    display: none; /* Hide the menu on small screens */
+    display: none;
   }
   .menu-bar {
     display: flex;
-  }
-  /* Show a simple menu button */
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px; /* Adjust the font size as needed */
-    cursor: pointer;
-  }
-
-  .menu-button:focus {
-    outline: none;
   }
 
   .services {
