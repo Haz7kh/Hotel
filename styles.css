@@ -214,3 +214,45 @@ input {
   max-width: 800px;
   margin: 10px auto;
 }
+
+/* ---------------room P3 ---------------------------------------- */
+
+.hero-room {
+  background-image: url("assets/photos/family-room.jpeg"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  color: #ffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.room-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 150px auto;
+}
+
+/* ------------room details p3--------------- */
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.extras-container {
+  gap: 30px;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 800px;
+  margin: 10px auto;
+}
