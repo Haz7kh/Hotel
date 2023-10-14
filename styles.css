@@ -42,6 +42,10 @@ header {
   color: #ffff;
 }
 
+.menu-bar {
+  display: none;
+}
+
 /* first section p1 style  */
 .hero {
   background-image: url("assets/photos/1pp.jpeg");
@@ -159,48 +163,6 @@ h3 {
   color: #fff;
 }
 
-/* mobile style for the first page  */
-
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none; /* Hide the menu on small screens */
-  }
-
-  /* Show a simple menu button */
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px; /* Adjust the font size as needed */
-    cursor: pointer;
-  }
-
-  .menu-button:focus {
-    outline: none;
-  }
-
-  .services {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    max-width: 800px;
-    margin: 20px auto;
-  }
-
-  .featured-rooms {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    max-width: 400px;
-    margin: 10px auto;
-  }
-
-  .card img {
-    width: 70%;
-    height: 200px;
-  }
-}
-
 /* ------------search rooms  P2 ------------------ */
 
 .search-rooms-container {
@@ -256,32 +218,6 @@ input {
   margin: 10px auto;
 }
 
-/* -----mobile style for the page 2 ---------- */
-@media screen and (max-width: 768px) {
-  .search-rooms-container {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    max-width: 500px;
-    margin: 10px auto 70px;
-  }
-  .rooms {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    max-width: 500px;
-    margin: 10px auto;
-  }
-
-  .room-type,
-  .guests,
-  .price-range-slider {
-    flex-direction: column;
-    text-align: center;
-    margin: 10px 0;
-  }
-}
-
 /* ---------------room P3 ---------------------------------------- */
 
 .hero-room {
@@ -324,8 +260,86 @@ input {
   margin: 10px auto;
 }
 
-/* -----mobile style for the page 2 ---------- */
+/* ////////Mobile style ////// */
+
 @media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  /* ----p1----- */
+  .menu {
+    display: none; /* Hide the menu on small screens */
+  }
+  .menu-bar {
+    display: flex;
+  }
+  /* Show a simple menu button */
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer;
+  }
+
+  .menu-button:focus {
+    outline: none;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  .featured-rooms {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  .card img {
+    width: 70%;
+    height: 200px;
+  }
+
+  /* ------p2------ */
+
+  .search-rooms-container {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto 70px;
+  }
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+
+  .room-type,
+  .guests,
+  .price-range-slider {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* -------p3-------- */
   .room-imgs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -353,17 +367,5 @@ input {
     gap: 30px;
     max-width: 400px;
     margin: 10px auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 16px;
   }
 }
